@@ -10,9 +10,16 @@ body{
 }
 
 header {
+
     width: 60%;
     margin: auto;
+    margin-top: 40px;
     
+}
+header p {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 40px;
 }
 
 
@@ -29,13 +36,14 @@ header {
 
 .dati {
     line-height: 2;
+    margin-bottom: 20px;
 }
 
 .cards {
     width: calc(100% / 3 - 40px);
     margin: 0 20px;
     background-color: white;
-    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .cards img {
