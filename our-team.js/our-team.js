@@ -7,6 +7,8 @@ Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e 
 MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe*/
 
+// variabili globali 
+const elContainer = document.getElementById("container")
 
 
 // Creare l’array di oggetti con le informazioni fornite.
@@ -43,7 +45,8 @@ console.log(membriTeam);
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 
 for (let i = 0; i < membriTeam.length; i++) {
-    const datiTeam = membriTeam[i];
-    console.log(membriTeam[i]);
-    
+    const datiMembro = membriTeam[i];
+    console.log(datiMembro.nome, datiMembro.ruolo, datiMembro.foto);
+    elContainer.innerHTML += `<div class ="membro">${datiMembro.nome}, ${datiMembro.ruolo}</div>`
+    elContainer.innerHTML += `<div class ="membro img">${datiMembro.foto}</div>`
 }
