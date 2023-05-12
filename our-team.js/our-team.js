@@ -27,7 +27,7 @@ const membriTeam = [
     },
     {"nome" : "Walter Gordon",	
     "ruolo" : "Social Media Manager",	
-    "foto" : "img/wayne-barnett-founder-ceo.jpg",
+    "foto" : "img/walter-gordon-office-manager.jpg",
     },
     {"nome" : "Angela Lopez",	
     "ruolo" : "Founder & CEO",	

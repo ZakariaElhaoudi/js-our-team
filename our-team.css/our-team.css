@@ -3,6 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    text-align: center;
+    background-color: whitesmoke;
+    color: #484848;
+}
+
+header {
+    width: 60%;
+    margin: auto;
+    
+}
+
 
 #container {
     width: 80%;
@@ -11,4 +23,21 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    background-color: whitesmoke;
+    
+}
+
+.dati {
+    line-height: 2;
+}
+
+.cards {
+    width: calc(100% / 3 - 40px);
+    margin: 0 20px;
+    background-color: white;
+    margin-top: 40px;
+}
+
+.cards img {
+    max-width: 100%;
 }
