@@ -56,6 +56,6 @@ for (let i = 0; i < membriTeam.length; i++) {
     // Trasformare la stringa foto in una immagine effettiva
     elContainer.innerHTML += `<div class ="cards">  
                             <div class ="membro img"><img src="${datiMembro.foto}" alt="immagine"></div>
-                            <div class ="dati">${datiMembro.nome}, ${datiMembro.ruolo}</div>
+                            <div class ="dati"><h2>${datiMembro.nome}</h2> ${datiMembro.ruolo}</div>
                             </div>`
 }
