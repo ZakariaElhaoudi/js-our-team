@@ -7,6 +7,10 @@ Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e 
 MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe*/
 
+/*BONUS 1:
+Trasformare la stringa foto in una immagine effettiva
+BONUS 2: Organizzare i singoli membri in card/schede*/
+
 // variabili globali 
 const elContainer = document.getElementById("container")
 
@@ -15,27 +19,27 @@ const elContainer = document.getElementById("container")
 const membriTeam = [
     {"nome" : "Wayne Barnett",	
     "ruolo" : "Founder & CEO",	
-    "foto" : "wayne-barnett-founder-ceo.jpg",
+    "foto" : "img/wayne-barnett-founder-ceo.jpg",
     },
     {"nome" : "Angela Caroll",	
     "ruolo" : "Chief Editor",	
-    "foto" : "angela-caroll-chief-editor.jpg",
+    "foto" : "img/angela-caroll-chief-editor.jpg",
     },
     {"nome" : "Walter Gordon",	
     "ruolo" : "Social Media Manager",	
-    "foto" : "wayne-barnett-founder-ceo.jpg",
+    "foto" : "img/wayne-barnett-founder-ceo.jpg",
     },
     {"nome" : "Angela Lopez",	
     "ruolo" : "Founder & CEO",	
-    "foto" : "angela-lopez-social-media-manager.jpg",
+    "foto" : "img/angela-lopez-social-media-manager.jpg",
     },
     {"nome" : "Scott Estrada",	
     "ruolo" : "Developer",	
-    "foto" : "scott-estrada-developer.jpg",
+    "foto" : "img/scott-estrada-developer.jpg",
     },
     {"nome" : "Barbara Ramos",	
     "ruolo" : "Graphic Designer",	
-    "foto" : "barbara-ramos-graphic-designer.jpg",
+    "foto" : "img/barbara-ramos-graphic-designer.jpg",
     },
 ]
 
@@ -47,6 +51,11 @@ console.log(membriTeam);
 for (let i = 0; i < membriTeam.length; i++) {
     const datiMembro = membriTeam[i];
     console.log(datiMembro.nome, datiMembro.ruolo, datiMembro.foto);
-    elContainer.innerHTML += `<div class ="membro">${datiMembro.nome}, ${datiMembro.ruolo}</div>`
-    elContainer.innerHTML += `<div class ="membro img">${datiMembro.foto}</div>`
+    
+    // Stampare le stesse informazioni su DOM sottoforma di stringhe
+    // Trasformare la stringa foto in una immagine effettiva
+    elContainer.innerHTML += `<div class ="cards">  
+                            <div class ="membro img"><img src="${datiMembro.foto}" alt="immagine"></div>
+                            <div class ="dati">${datiMembro.nome}, ${datiMembro.ruolo}</div>
+                            </div>`
 }
